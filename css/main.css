@@ -1,0 +1,96 @@
+@import url('fonts/fonts.css');
+@import url('reset.css');
+
+/* General Demo Style */
+body{
+	background: #ddd;
+	color: rgba(255,255,255,1);
+	font-family:'Myriad Pro', Arial, sans-serif;
+	font-size: 15px;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow:hidden;
+}
+.footer{
+	min-height: 20px;
+	position: fixed;
+	bottom: 0;
+	background: #000;
+	width: 100%;
+	z-index: 9999;
+	-moz-box-shadow: 20px 0 0 0 #444444;
+	-webkit-box-shadow: 20px 0 0 0 #444444;
+	box-shadow: 20px 0px 0 0 #444444;
+	}
+.footer #content
+{	padding: 10px;
+	text-align: center;}
+.clr{
+	clear: both;
+}
+h1.main{
+	font-size: 24px;
+	position:relative;
+	font-weight: 400;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+    padding: 10px;
+	text-align: center;
+	z-index: 1000;
+	-webkit-animation: appear 0.6s ease-in-out 6s backwards;
+	-moz-animation: appear 0.6s ease-in-out 6s backwards;
+}
+/* Header Style */
+.header{
+	font-family:'Arial Narrow', Arial, sans-serif;
+	line-height: 20px;
+	font-size: 20px;
+	background: #000;
+	opacity: 0.9;
+	text-transform: none;
+	z-index: 9999;
+	position: relative;
+	-moz-box-shadow: 0px 0px 20px #444444;
+	-webkit-box-shadow: 0px 0px 20px #444444;
+	box-shadow: 0px 0px 20px #444444;
+}
+.header a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #ddd;
+	display: block;
+	float: left;
+}
+.header a:hover{
+	color: #fff;
+}
+.header span.right{
+	float: right;
+}
+.header span.right a{
+	float: right;
+	display: inline;
+}
+
+@-webkit-keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-moz-keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
